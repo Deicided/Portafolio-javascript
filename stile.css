@@ -1,0 +1,291 @@
+*{
+font-size: 36px;
+padding: 0;	
+margin: 0;
+box-sizing: border-box;
+
+}
+/* home - cabezalio principal  */
+.header1{
+width: 100%;
+background-color: #0068B5;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 25px 0;
+}
+.container-logo{
+display: flex;
+align-items: center;
+color: white;
+
+}
+.container-logo:hover{
+	color: rgb(220, 248, 255);	
+}
+
+.menu li{
+display: inline-block;
+margin: 0 12px;
+}
+.menu li a{
+font-size: 23px;
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+padding: 10px 15px;
+border-radius: 30px;
+}
+.menu li a:hover{
+background-color: rgba(224, 240, 240, 0.322);
+
+}
+
+/* tag - Article  */
+
+.article01 {
+
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 25px 0;
+	font-size: 27px;
+	
+
+}
+ /*.h1-titulo p{
+
+text-align: justify;
+
+
+}*/
+
+
+
+
+
+
+.imgfoto{
+max-width:250px;
+
+
+}
+
+
+.flex-container{
+	display: flex;
+	max-width: 1500px;
+	margin: auto;
+	width: 100%;
+	min-width: 320px;
+	padding: 200px;
+	}
+
+	#quem-somos{
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 25px;
+	}
+
+.perfil {
+	width: 350px;
+	border: 3px solid rgb(255, 255, 255);
+	border-radius: 50%;
+	margin: 50px;
+}
+
+.presentacion{
+    height: 70vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trabajo {
+	width: 350px;
+	border: 3px solid rgb(255, 255, 255);
+	
+	margin: 50px;
+}
+
+#tabajooo {
+	background-color: blueviolet;
+	flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 25px;
+}
+
+
+.container-externo{
+    background-color: #122a57;
+    width: 100%;
+	font-size: 25px;
+	color: aliceblue;
+	justify-content: space-between;
+	
+}
+
+.flex-container01{
+	display: flex;
+	max-width: 992px;
+	margin: auto;
+	width: 100%;
+	min-width: 320px;
+	}
+
+	#fondo{
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 25px;
+		padding: 200px;
+		max-width: 1500px;
+
+	
+	}
+
+
+
+	#planos{
+        flex-direction: column;
+        min-height: 150px;
+        padding-top: 50px;
+		max-width: 1400px;
+		margin-top: 150px;
+		margin-bottom: 0%;
+    }
+
+    #planos h2{
+        font-size: 32px;
+    }
+
+	.list-planos{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .item-plano{
+        flex: 1;
+        border: 5px solid #0068B5;
+        margin-right: 20px;
+        padding: 10px;
+        max-width: 240px;
+            }
+
+    .item-plano .btn{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .item-plano h3{
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .item-plano h3::after{
+        content: " ";
+        background-color: #0068B5;
+        width: 100%;
+        height: 3px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .item-plano ul{
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .item-plano ul li{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .item-plano ul li::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #0068B5;
+        margin-right: 5px;
+    }
+
+	.flex-container02{
+		margin-top: 500px;
+		display: flex;
+	max-width: 1500px;
+	margin: auto;
+	width: 100%;
+	min-width: 320px;
+	padding: 200px;
+
+	}
+
+
+
+
+	/*Definir as propiedades da página contato */
+#txt-contato {width: 100%;height: 100%;}
+
+#txt-contato form {width: 100%;position: relative;float: left;background-color: #fff;padding: 2%;top: 5%;min-height: 400px;}
+
+#txt-contato form label {font-weight: bold;}
+
+#txt-contato form input {max-width: 100%; width: 99%; height: 30px; margin-top: 10px;margin-bottom: 15px;border: solid #0068B5 1px; padding-left: 1%;}
+
+#txt-contato form textarea {max-width: 100%;width: 99%;border: solid#0068B5 1px;padding-left: 1%;min-height: 100px;}
+
+#txt-contato form button {width: 30%;height: auto;cursor: pointer;background-color: #E7E7E7; color: fff; font-size: 1.5em;padding: 15px o 15px 0;margin-left: 35%;margin-top: 1%;}
+
+#txt-contato #conta-data{ width: 20%;position: relative; float: left;padding: 3.3%;background-color: #0068B5; color: #fff;top: 5%; margin-left: 1.5%;height:400px;text-align: center;}
+#txt-contato #conta-data h3{ color: #fff;text-align: center;}
+#txt-contato #conta-data h5{ margin-top: 6%;margin-bottom: 4%;vertical-align: middle;}
+#txt-contato #conta-data h5 img{width: 50px;}
+
+#txt-contato{
+	margin-top: 15px;
+		display: flex;
+	max-width: 1500px;
+	margin: auto;
+	width: 100%;
+	min-width: 320px;
+	padding: 200px;
+	background-color: #E7E7E7;
+	
+}
+
+
+.enviar{
+color: black
+
+
+}
+
+.warnins{
+width: 200px;
+text-align: center;
+margin: auto;
+padding: auto;
+color: crimson;
+padding-top: 20px;
+
+}
+#textEmail{
+
+color: red;
+
+
+}
+
+
+
+

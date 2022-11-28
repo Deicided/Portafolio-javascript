@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+
+<!--  DW-->
+<html>
+	<head>
+		<title>portafolio final</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="stile.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+	<header class="header1"> 
+		
+			
+					<DIV class="container-logo">
+
+						<h1>PORTFOLIO</h1>
+					</DIV>
+			<div class="menu">
+				<ul>
+					<li><a href="#quem-somos">Apresentaçao</a></li>
+					<li><a href="#fondo">Projetos</a></li>
+					<li><a href="#planos">Experiencia</a></li>
+					<li><a href="#txt-contato">Contato</a></li>
+				</ul>
+			</div>
+
+		</header>	
+
+
+		<!--Presentacion-->
+		<div class="flex-container presentacion" id="quem-somos">
+			<div>
+				<h2>Olá, Meu Nome é Daniel Cuarez</h2><br>
+				<p> Sou da area de computaçao, já trabalhe em diversas empresas na area de informatica e contabilidade, tenho conhementos no excel, word, power bi, e atualmente estou comenzando na area de From-End, HTML-CSS-Java script </p>
+				
+			</div>
+			<div>
+				<img src="perfil.jpg" alt="Foto perfil" class="perfil">
+			</div>
+	
+		</div>
+
+		<hr>
+
+
+		<!--Trabajo-->
+
+		<div class="flex-container01 presentacion" id="fondo">
+			<div>
+				<h2>Experiencia de emprego no Brasil</h2><br>
+				<ul>
+					<li>Accenture – Projeto Petronect </li>
+					<li>Accenture – Projeto Oi  </li>
+					<li>Empresa Tigre - Projeto Paraguai, Argentina. </li>
+				</ul> 
+				
+			</div>
+			<div class="foto-trabajo">
+				<img src="foto-trabajo.jpeg" alt="Foto perfil" class="perfil">
+			</div>
+	
+		</div>
+		
+
+		<hr>
+
+
+
+
+	
+
+			<!--Proyectos-->
+			
+			<div class="flex-container02" id="planos">
+				<div><h2 class="h2-10" >Mis primeros projetos HTML e CSS</h2></div><br>
+				<br>
+		
+				<div class="list-planos">
+					<div class="item-plano">
+						<h3>Receita Strogonoff</h3>
+						<p>Tem interesse em fazer um bom strogonoff? olha essa receita aqui no link <a href="https://github.com/Deicided/receita-strogonoff/blob/main/index.html">Link - Github</p></a>
+
+						<a href="#" class="btn">Saiba Mais!</a>
+					</div>
+			
+					<div class="item-plano">
+						<h3>Meu portafolio HTML</h3>
+						<br>
+						<p>primer proyecto de portafolio Criado com HTML <a href="https://github.com/Deicided/Meu-Portfolio/blob/main/index.html">Link - Github</p></a>
+						<a href="#" class="btn">Saiba Mais!</a>
+					</div>
+			
+					<div class="item-plano">
+						<h3>Projeto placas de video</h3>
+						<br>
+						<p> site - placas de video. Mostrando simulaçao de anuncio <a href="https://github.com/Deicided/pagina02-card/blob/main/index.html">Link - Github</a></p>
+						<a href="#" class="btn">Saiba Mais!</a>
+					</div>
+				</div>
+			</div>
+			<hr>
+
+            
+
+		<!--Test contato-->
+
+		<section id="txt-contato">
+			<form name="meu_form" id="form">
+				<h1>Contacto</h1>
+				<br>
+				<p class="nome">
+					<label for="nome">Nome:</label><br>
+					<input type="text" name="nomeid" id="nombre-1" placeholder="Digite seu nome" required="required" name="nome" />
+					
+				</p>
+				<p class="fone">
+					<label for="fone">Fone:</label><br>
+					<input type="phone" id="fone-1" placeholder="(xx)xxxxx-xxxx" name="fone" />
+				</p>
+				<p>
+					<label for="email">Email:</label><br>
+					<input  type="text" id="email"  placeholder="E-mail"/>
+					<small id="textEmail"></small>
+				</p>
+				<p>
+					<textarea placeholder="mensagem" required="required"></textarea>
+				</p>
+				<button type="submit">Entrar</button><br>
+                <small id="textForm"></small>
+
+		
+			</form>
+
+			<!--javascritp comandos.-->
+			<script>
+					
+let email = document.getElementById('email');
+let form = document.querySelector('form');
+let textForm = document.getElementById('textForm')
+let textEmail = document.getElementById('textEmail')
+
+form.addEventListener('submit' , (e) => {
+    if(email.value == '' && password.value == '') {
+        textForm.textContent = 'Você precisa preencher todos os campos!!'
+    } else {
+        console.log(email.value);
+    console.log(password.value);
+    }
+    
+    e.preventDefault()
+
+})
+
+email.addEventListener("keyup", () => {
+    if(validatorEmail(email.value) !== true) {
+        textEmail.textContent = "[ERROR] por favor digite Email corretamente - Ex abc@com"
+    } else {
+        textEmail.textContent = ''
+    }
+})
+
+function validatorEmail(email) {
+    let emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+    return emailPattern.test(email)
+}
+
+			
+
+			</script>
+	
+	</body>
+</html>
